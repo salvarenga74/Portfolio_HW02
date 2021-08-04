@@ -19,6 +19,7 @@ body{
     justify-content:flex-start;
 }
 
+/* Navigation Bar */
 nav{
     display:flex;
     justify-content: flex-end;
@@ -33,6 +34,7 @@ nav a {
     font-size: 25px;
 }
 
+/* Header Banner, includes image and text */
 header{
     background:var(--mainBlue);
     color: white;
@@ -47,26 +49,54 @@ header{
     margin: 150px 4% 30px 2%;
     flex: 0 0 60%;
     text-align: end;
-   
 }
 
 .headerContent h1{
     text-align: end;
     margin:0 auto;
     font-size: 50px;
-
 }
 
 #headerImage{
     display: flex;
-    /* align-items:center; */
     float:right;
     margin: 20px auto 50px;
     height:500px;
     width:50%;
 }
 
+/* My Applications Section */
+main{
+    display:flex;
+    margin-top: 2%;
+    flex-wrap:wrap;
+}
 
+main h2{
+    display:inline-flex;
+
+}
+#myApplications{
+   
+    flex: 1 0 0;
+    padding: 10px;
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;
+}
+
+main h3{
+    padding:20px;
+    background:var(--regBlue);
+    color:white;
+}
+
+main article{
+    width: 100%;
+    min-width:400px;
+}
+
+/* Footer Element */
 footer{
     padding:20px;
     text-align: center;
