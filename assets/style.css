@@ -42,6 +42,7 @@ header{
     align-items: flex-start;
     width:100%;
     margin: 0 auto;
+    margin-bottom: 70px;
 }
 
 .headerContent{
@@ -66,34 +67,106 @@ header{
 }
 
 /* My Applications Section */
-main{
+#myApplications{
     display:flex;
     margin-top: 2%;
     flex-wrap:wrap;
-}
+    width:90%;
+    margin: 0 auto 70px;
 
-main h2{
-    display:inline-flex;
-
-}
-#myApplications{
-   
     flex: 1 0 0;
     padding: 10px;
     text-align: center;
-    border-style: solid;
-    border-width: 1px;
+}
+
+h2{
+    display:inline-flex;
+    margin-left:50px;
+    border-bottom: 4px solid var(--mainBlue);
+    width:90%;
+    
+    font-size:30px;
+}
+
+main article{
+    border: 3px solid var(--mainBlue);
+    margin: 10px;
 }
 
 main h3{
     padding:20px;
     background:var(--regBlue);
     color:white;
+    margin-top: 0;
 }
 
 main article{
     width: 100%;
     min-width:400px;
+}
+
+main .cardContent{
+    display:inline-flexbox;
+    width: 60%;
+
+}
+
+a.button{
+    appearance: button;
+    background-color: var(--regGreen);
+    padding: 1%;
+    border-radius: 50%;
+
+    text-decoration: none;
+    color: #ffffff;
+}
+
+main .pageImage{
+   border: 2px dashed red;
+   display: inline-flexbox;
+   width:42px;
+   height:42px;
+}
+
+/* About Me Section */
+#aboutMe{
+    display:flex;
+    margin-top: 2%;
+    flex-wrap:wrap;
+    width:90%;
+    margin: 0 auto 70px;
+
+    flex: 1 0 0;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Contact Info Section */
+#contactInfo{
+    display:flexbox;
+    flex-wrap:wrap;
+    width:70%;
+    padding: 10px;
+    margin: 0 auto 70px;
+
+    flex: 1 0 0;
+
+    text-align: left;
+    margin-left:150px;
+
+    border:2px dashed red;
+}
+
+.contactDetail{
+    display:block;
+    width: 275px;
+    text-decoration: none;
+    padding:10px;
+    margin-bottom:10px;
+    background: #f6d55c;
+    color: var(--mainBlue);
+    text-align: center;
+    font-weight: 800;
 }
 
 /* Footer Element */
