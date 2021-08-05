@@ -46,7 +46,7 @@ header{
 }
 
 .headerContent{
-    /* : top right bottom left */
+        /* : top right bottom left */
     margin: 150px 4% 30px 2%;
     flex: 0 0 60%;
     text-align: end;
@@ -69,7 +69,6 @@ header{
 /* My Applications Section */
 #myApplications{
     display:flex;
-    margin-top: 2%;
     flex-wrap:wrap;
     width:90%;
     margin: 0 auto 70px;
@@ -90,14 +89,20 @@ h2{
 
 main article{
     border: 3px solid var(--mainBlue);
-    margin: 10px;
+    margin: 20px;
+    transition: all .2s ease-in-out; 
+      
+}
+main article:hover{
+    transform: scale(1.1);
 }
 
 main h3{
     padding:20px;
     background:var(--regBlue);
     color:white;
-    margin-top: 0;
+    margin: 0 auto;
+    font-size: 22px;;
 }
 
 main article{
@@ -106,26 +111,37 @@ main article{
 }
 
 main .cardContent{
-    display:inline-flexbox;
-    width: 60%;
-
+    display:inline-flex;
+    flex-direction:column;
+    width:600px;
+    align-items: center;
+    margin-top:20px;
+    font-size: 20px;
 }
 
 a.button{
     appearance: button;
     background-color: var(--regGreen);
-    padding: 1%;
-    border-radius: 50%;
-
+    width:200px;
+    padding: 2%;
+    border-radius: 10px;
+    
     text-decoration: none;
     color: #ffffff;
 }
+a.button:hover{
+    box-shadow:0 0 2px 4px var(--regYellow);
+}
 
-main .pageImage{
-   border: 2px dashed red;
-   display: inline-flexbox;
-   width:42px;
-   height:42px;
+.pageImage{
+    border: 2px solid var(--regGreen);
+    display: inline-block;
+    float:right;
+    padding: 5px;
+    margin:5px auto;
+}
+ .pageImage:hover{
+    box-shadow:0 0 2px 4px var(--regYellow);
 }
 
 /* About Me Section */
@@ -182,6 +198,9 @@ main .pageImage{
     text-align: center;
     font-weight: 800;
 }
+.contactDetail:hover{
+    box-shadow:0 0 2px 4px var(--regGreen);
+}
 
 /* Footer Element */
 footer{
@@ -207,10 +226,5 @@ footer{
     .headerContent{
         margin-left: 0;
     }
-
-    .headShot{
-        size: 20px 40px;
-    }
-
     
 }
