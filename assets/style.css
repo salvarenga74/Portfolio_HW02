@@ -19,13 +19,14 @@ body{
     justify-content:flex-start;
 }
 
+/*  */
 /* Navigation Bar */
+/*  */
 nav{
     display:flex;
     justify-content: flex-end;
     background:var(--mainBlue);
 }
-
 nav a {
     color:white;
     padding:20px 20px;
@@ -34,7 +35,9 @@ nav a {
     font-size: 25px;
 }
 
+/*  */
 /* Header Banner, includes image and text */
+/*  */
 header{
     background:var(--mainBlue);
     color: white;
@@ -44,20 +47,17 @@ header{
     margin: 0 auto;
     margin-bottom: 70px;
 }
-
 .headerContent{
         /* : top right bottom left */
     margin: 150px 4% 30px 2%;
     flex: 0 0 60%;
     text-align: end;
 }
-
 .headerContent h1{
     text-align: end;
     margin:0 auto;
     font-size: 50px;
 }
-
 #headerImage{
     display: flex;
     float:right;
@@ -66,13 +66,14 @@ header{
     width:50%;
 }
 
+/*  */
 /* My Applications Section */
+/*  */
 #myApplications{
     display:flex;
     flex-wrap:wrap;
     width:90%;
-    margin: 0 auto 70px;
-
+    margin: 0 auto 25px;
     flex: 1 0 0;
     padding: 10px;
     text-align: center;
@@ -87,11 +88,14 @@ h2{
     font-size:30px;
 }
 
+/* The Cards or sections that have my 3 different application examples */
 main article{
     border: 3px solid var(--mainBlue);
     margin: 20px;
     transition: all .2s ease-in-out; 
-      
+
+    width: 100%;
+    min-width:400px;
 }
 main article:hover{
     transform: scale(1.1);
@@ -105,18 +109,14 @@ main h3{
     font-size: 22px;;
 }
 
-main article{
-    width: 100%;
-    min-width:400px;
-}
-
+/* This is the text and the button on the Application Cards */
 main .cardContent{
     display:inline-flex;
     flex-direction:column;
     width:600px;
     align-items: center;
     margin-top:20px;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 a.button{
@@ -133,6 +133,7 @@ a.button:hover{
     box-shadow:0 0 2px 4px var(--regYellow);
 }
 
+/* Here is the Images that show up on all the Applications */
 .pageImage{
     border: 2px solid var(--regGreen);
     display: inline-block;
@@ -144,20 +145,36 @@ a.button:hover{
     box-shadow:0 0 2px 4px var(--regYellow);
 }
 
+/*  */
 /* About Me Section */
-#aboutMe{
+/*  */
+.aboutMe{
     display:flex;
-    margin-top: 2%;
-    flex-wrap:wrap;
     width:90%;
-    margin: 0 auto 70px;
-
+    margin: 0 auto 25px;
     flex: 1 0 0;
-    padding: 10px;
     text-align: center;
+    padding:10px;
+}
+.aboutMeContent{
+margin: 0 4% 30px 2%;
+text-align: start;
+display: flex;
+flex-direction: column;
+font-size:18px;
+}
+.gradPhoto{
+display: flex;
+float:left;
+margin: 0 30px;
+height:400px;
+width:30%;
+padding-left:40px;
 }
 
+/*  */
 /* Contact Info Section */
+/*  */
 .contactBackground{
     width:100%;
     background:var(--mainBlue);
@@ -202,7 +219,9 @@ a.button:hover{
     box-shadow:0 0 2px 4px var(--regGreen);
 }
 
+/*  */
 /* Footer Element */
+/*  */
 footer{
     padding:20px;
     text-align: center;
@@ -214,7 +233,7 @@ footer{
 @media screen and (max-width: 768px){
    
     nav
-    {flex-direction: column;
+        {flex-direction: column;
     }
     nav a {
         text-align:left;
@@ -227,4 +246,11 @@ footer{
         margin-left: 0;
     }
     
+    .aboutMe{
+        flex-wrap: wrap;
+    }
+
+    .cardContent{
+        flex-wrap:wrap;
+    }
 }
