@@ -142,19 +142,33 @@ main .pageImage{
 }
 
 /* Contact Info Section */
+.contactBackground{
+    width:100%;
+    background:var(--mainBlue);
+    padding-top:30px;
+}
+
 #contactInfo{
     display:flexbox;
     flex-wrap:wrap;
     width:70%;
     padding: 10px;
-    margin: 0 auto 70px;
+    margin: 0 auto 40px;
 
     flex: 1 0 0;
-
+    color:white;
     text-align: left;
     margin-left:150px;
+}
+.contactBackground h3{
+    text-align: right;
+    font-size: 25px;
+}
 
-    border:2px dashed red;
+.contactBackground h4{
+    text-align: left;
+    font-size: 50px;
+    margin-bottom: 30px;
 }
 
 .contactDetail{
@@ -162,7 +176,7 @@ main .pageImage{
     width: 275px;
     text-decoration: none;
     padding:10px;
-    margin-bottom:10px;
+    margin-bottom:25px;
     background: #f6d55c;
     color: var(--mainBlue);
     text-align: center;
@@ -173,22 +187,30 @@ main .pageImage{
 footer{
     padding:20px;
     text-align: center;
-    background:var(--mainBlue);
+    background:var(--regBlue);
     color:white;
     margin-top: auto;
 }
 
 @media screen and (max-width: 768px){
-    header,
+   
     nav
-    {flex-direction: column;}
+    {flex-direction: column;
+    }
+    nav a {
+        text-align:left;
+        font-size: 25px;
+        margin-left:10px;
+        padding-bottom:0;
+    }
 
     .headerContent{
         margin-left: 0;
     }
 
     .headShot{
-        height:100px;
-        width: 20%;
+        size: 20px 40px;
     }
+
+    
 }
